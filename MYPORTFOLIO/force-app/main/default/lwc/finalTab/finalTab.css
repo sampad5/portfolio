@@ -1,0 +1,61 @@
+
+    .container {
+        text-align: center;
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .profile {
+        margin-bottom: 20px;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #333;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-size: cover;
+    }
+
+    .instagram { background-image: url('/assets/instagram.png'); }
+    .trailhead { background-image: url('/assets/trailhead.png'); }
+    .linkedin { background-image: url('/assets/linkedin.png'); }
+    .github { background-image: url('/assets/github.png'); }
+
+    .contact-item {
+        margin-bottom: 10px;
+    }
+
+    .heading {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .detail {
+        color: #555;
+        margin-left: 5px;
+    }
+
+    .resume-section button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }

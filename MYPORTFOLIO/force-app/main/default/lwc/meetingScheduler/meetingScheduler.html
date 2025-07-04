@@ -1,0 +1,11 @@
+<template>
+    <div class="container">
+        <h2>Schedule a Meeting</h2>
+        <lightning-input label="Meeting Title" value={meetingTitle} onchange={handleTitleChange}></lightning-input>
+        <lightning-input label="Meeting Date" type="date" value={meetingDate} onchange={handleDateChange}></lightning-input>
+        <lightning-input label="Start Time" type="time" value={startTime} onchange={handleStartTimeChange}></lightning-input>
+        <lightning-input label="End Time" type="time" value={endTime} onchange={handleEndTimeChange}></lightning-input>
+        
+        <lightning-button label="Schedule Meeting" variant="brand" onclick={scheduleMeeting}></lightning-button>
+    </div>
+</template>

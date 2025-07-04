@@ -1,0 +1,30 @@
+<template>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src={profilePic} alt="Profile Picture" class="profile-pic" />
+            <h1>{name}</h1>
+            <h2>{designation}</h2>
+            <p>{location}</p>
+            <div class="social-icons">
+                <a href={instagram} target="_blank" class="icon instagram"></a>
+                <a href={trailhead} target="_blank" class="icon trailhead"></a>
+                <a href={linkedin} target="_blank" class="icon linkedin"></a>
+                <a href={github} target="_blank" class="icon github"></a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact">
+            <div class="contact-item">
+                <span class="heading">Email:</span> <span class="detail">{email}</span>
+                <span class="heading">Phone:</span> <span class="detail">{phone}</span>
+                <span class="heading">Address:</span> <span class="detail">{address}</span>
+            </div>
+            <div class="resume-section">
+                <button onclick={downloadResume}>Download Resume</button>
+                <p>Trailhead Profile: <a href={trailhead} target="_blank">View</a></p>
+            </div>
+        </div>
+    </div>
+</template>

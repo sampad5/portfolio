@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url(/sfsites/c/resource/BmiAppBackGround);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bmi-container {
+    text-align: center;
+    width: auto; /* Shrink the container to fit the content */
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.8); /* Darker background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Contrast shadow */
+    box-sizing: border-box;
+}
+
+.bmi-title {
+    color: #ecf0f1;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.bmi-input {
+    width: 100%;
+    padding: 10px;
+    background-color: #34495e; /* Dark background */
+    color: #2c3e50; /* Darker text color for input */
+    border: 1px solid #2c3e50; /* Dark border */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.bmi-input::placeholder {
+    color: #7f8c8d; /* Lighter color for placeholder */
+}
+
+.bmi-input:focus {
+    border-color: #27ae60; /* Green border on focus */
+    outline: none;
+}
+
+.button-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: auto; /* Ensure button section shrinks to fit button sizes */
+}
+
+.reset-icon {
+    margin-right: 10px;
+}
+
+.bmi-button {
+    background: #27ae60; /* Green button */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: auto; /* Button will shrink to its content size */
+    cursor: pointer;
+    border: none;
+    outline: none; /* Remove blue focus outline */
+    margin-bottom: 10px; /* Space between buttons */
+}
+
+.bmi-button:focus,
+.bmi-button:focus-visible {
+    outline: none; /* Ensure no outline appears on focus */
+    box-shadow: 0 0 5px rgba(39, 174, 96, 0.5); /* Optional: add a subtle green glow effect on focus */
+}
+
+.bmi-button:hover {
+    background: #2ecc71; /* Brighter green on hover */
+}
+
+.bmi-button:active {
+    background: #27ae60; /* Maintain the original green color when clicked */
+}
+
+.reset-button {
+    background: #e74c3c; /* Red color for reset */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: auto; /* Button will shrink to its content size */
+    cursor: pointer;
+    border: none;
+}
+
+.reset-button:hover {
+    background: #c0392b; /* Darker red on hover */
+}
+
+.result-section {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ecf0f1;
+}
+
+.info-section {
+    margin-top: 30px;
+    background: rgba(189, 195, 199, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.bmi-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bmi-list li {
+    margin-top: 5px;
+    color: #2c3e50;
+}
+
+.bmi-underweight {
+    color: #3498db;
+}
+
+.bmi-healthy {
+    color: #2ecc71;
+}
+
+.bmi-overweight {
+    color: #f39c12;
+}
+
+.bmi-obese {
+    color: #e74c3c;
+}

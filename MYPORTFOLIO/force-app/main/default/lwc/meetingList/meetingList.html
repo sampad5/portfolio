@@ -1,0 +1,10 @@
+<template>
+    <div class="container">
+        <h2>Upcoming Meetings</h2>
+        <template if:true={meetings}>
+            <template for:each={meetings} for:item="meeting">
+                <p key={meeting.Id}>{meeting.Name} - {meeting.Meeting_Date__c} ({meeting.Start_Time__c} - {meeting.End_Time__c})</p>
+            </template>
+        </template>
+    </div>
+</template>

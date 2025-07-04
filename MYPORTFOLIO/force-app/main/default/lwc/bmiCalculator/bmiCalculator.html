@@ -1,0 +1,64 @@
+<template>
+    <div class="container">
+        <div class="bmi-container">
+            <h2 class="bmi-title">BMI Calculator</h2>
+
+            <!-- Input Section - This section will be hidden after BMI calculation -->
+            <template if:true={isFormVisible}>
+                <div class="input-section">
+                    <label for="weight" class="input-label">Weight (Kg)</label>
+                    <lightning-input 
+                        type="number" 
+                        step="0.01" 
+                        placeholder="Enter your weight in kg" 
+                        name="Weight" 
+                        value={weight} 
+                        onchange={onweightChange} 
+                        class="bmi-input">
+                    </lightning-input>
+
+                    <label for="height" class="input-label">Height (Cm)</label>
+                    <lightning-input 
+                        type="number" 
+                        step="0.01" 
+                        placeholder="Enter your height in cm" 
+                        name="Height" 
+                        value={height} 
+                        onchange={onheightChange} 
+                        class="bmi-input">
+                    </lightning-input>
+                </div>
+
+                <!-- Calculate BMI Button -->
+                <div class="button-section">
+                    <button class="bmi-button" onclick={calculateBMI}>Calculate BMI</button>
+                </div>
+            </template>
+
+            <!-- Reset Button Section (Always visible) -->
+            <template if:true={clicked}>
+                <div class="button-section">
+                    <button class="reset-button" onclick={resetInputs}>Reset</button>
+                </div>
+            </template>
+
+            <!-- Result Section -->
+            <template if:true={clicked}>
+                <div class="result-section">
+                    <p>Your BMI: {bmi}</p>
+                    <p class={resultClass}>{result}</p>
+                </div>
+            </template>
+
+            <!-- Information Section -->
+            <div class="info-section">
+                <ul class="bmi-list">
+                    <li class="bmi-underweight">Underweight: BMI less than 18.5</li>
+                    <li class="bmi-healthy">Healthy: BMI between 18.5 and 24.9</li>
+                    <li class="bmi-overweight">Overweight: BMI between 25 and 29.9</li>
+                    <li class="bmi-obese">Obese: BMI 30 or higher</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
